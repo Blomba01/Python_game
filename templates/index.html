@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Battle Game</title>
+</head>
+<body>
+  <h2>Battle Begins!</h2>
+  <p>Your HP: {{ player.hp }} | Mana: {{ player.mana }} </p>
+  <p>Enemy HP: {{ enemy.hp }}</p>
+  <p>Inventory: {{ inventory }}</p>
+
+  <form method="post" action="/action">
+    <button name="move" value="attack">Attack</button>
+    <button name="move" value="heal">Heal</button>
+    <button name="move" value="use_heal">Use Healing Potion</button>
+    <button name="move" value="use_mana">Use Mana Potion</button>
+  </form>
+</body>
+</html>
